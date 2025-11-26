@@ -1,0 +1,23 @@
+# Test configuration for external services
+external:
+  services:
+    visa:
+      base-url: http://localhost:8089/visa/api/v1
+    mastercard:
+      base-url: http://localhost:8089/mastercard/api/v1  
+    swift:
+      base-url: http://localhost:8089/swift/api/v1
+    falcon:
+      base-url: http://localhost:8089/falcon/api/v1
+    kyc:
+      base-url: http://localhost:8089/kycprovider/api/v1
+    equifax:
+      base-url: http://localhost:8089/equifax/api/v1
+    experian:
+      base-url: http://localhost:8089/experian/api/v1
+
+# Pact configuration
+pact:
+  broker:
+    url: http://localhost:9292
+  version: "1.0.0"
